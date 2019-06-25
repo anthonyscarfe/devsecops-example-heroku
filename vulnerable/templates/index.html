@@ -1,4 +1,4 @@
-<h1>Vulnerable Application</h1>
+<h1>Vulnerable Application of Doom</h1>
 
 {% if name %}
     <p>Hello {{ name |safe }}</p>
@@ -8,5 +8,6 @@
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="name" placeholder="Max" />
+        <input type="submit" name="Send!" placeholder="Max" />
     </form>
 {% endif %}
