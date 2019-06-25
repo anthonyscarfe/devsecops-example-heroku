@@ -48,3 +48,4 @@ workflows:
     jobs:
       # Deploy to Heroku
       - heroku/deploy-via-git
+      - python-safety
